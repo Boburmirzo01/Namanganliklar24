@@ -102,6 +102,15 @@
  margin-left: auto;
  
 }
+/* LOGO */
+ .logo {
+  display: flex;
+  padding: 4px 8px;
+  border-radius:5px;
+  background-color: #fff;
+  margin-right: 17px;
+  box-shadow: 0 2px 6px rgba(202, 202, 202, 0.25 );
+ }
 /* EXCHANGE RATES */
 .exchange-rates  {
  display: flex;
@@ -124,12 +133,19 @@
  border: none;
  border-radius: 5px;
  background-color: #fff;
+ margin-right: 8px;
 }
 .language-toggler {
  padding: 10px;
+ margin-right: 24px; 
  border: none;
  border-radius: 5px;
  background-color: #fff;
+}
+.language-toggler__img {
+ width: 20px;
+ height: 20px;
+ border-radius:50%; 
 }
 .telegram-sub {
  display: flex;
@@ -143,4 +159,11 @@
  background-color: #1e96c8 ;
  background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
  text-decoration: none;
+}
+.telegram-sub__img {
+ margin-right: 7px;
+}
+.telegram-sub:hover {
+ background-color: #1e96c8 ;
+ background-image: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 85.96%);
 }
