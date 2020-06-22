@@ -98,6 +98,7 @@
  align-items: center;
  font-size: 16px;
  line-height: 19px;
+ margin-bottom: 40px;
 }
 .site-header__exchange-rates {
  margin-right: 17px;
@@ -169,20 +170,22 @@
  border: none;
  border-radius: 5px;
  background-color: #fff;
- transition: box-shadow 0.3s ease;
+ transition: all 0.3s ease;
+ cursor: pointer;
 }
 .language-toggler {
  padding: 10px;
  border: none;
  border-radius: 5px;
  background-color: #fff;
- transition: box-shadow 0.3s ease;
+ transition: all 0.3s ease;
+ cursor: pointer;
 }
 .search-button:hover {
- 
+ box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 .language-toggler:hover {
- box-shadow: 0 5xp 8px rgba(0, 0, 0, 0.1)
+ box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 .language-toggler__wrapper {
  display: flex;
@@ -210,8 +213,7 @@
  transition: box-shadow 0.3s ease;
 }
 .telegram-sub:hover{
- box-shadow: 0 5xp 8px rgba(0, 0, 0, 0.1)
-
+ box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 .telegram-sub__img {
  margin-right: 7px;
@@ -219,4 +221,43 @@
 .telegram-sub:hover {
  background-color: #1e96c8 ;
  background-image: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 85.96%);
+}
+/* sitenav */
+.sitenav {
+ margin-bottom: 18px;
+ border-radius: 5px;
+ background-color: #fff;
+ box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+} 
+.sitenav__list {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items:center; 
+ margin: 0;
+ padding: 0;
+ padding: 17px 12px;
+ list-style-type: none;
+}
+.sitenav__item {
+  margin: 5px 12px;
+}
+.sitenav__item:not(:last-child) {
+ margin-right: 27px;
+} 
+.sitenav__link {
+ display: block;
+ font-size: 19px;
+ line-height: 23px;
+ font-weight: 500;
+ color:#515151;
+ text-decoration: none;
+ transition: .3s ease color;
+}
+.sitenav__link:hover {
+ color:#295091; 
+}
+/* top-banner__link */
+.top-banner__link {
+ display: flex;
 }
