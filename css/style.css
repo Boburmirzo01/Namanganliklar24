@@ -269,6 +269,29 @@ img {
 .top-banner__link {
  display: flex;
 }
+/* SITE-FOOTER */
+.site-footer {
+ padding: 18px;
+ background-color: #295093;
+ color: #fff;
+ font-size: 14px;
+ line-height: 17px; 
+}
+.site-footer__top {
+ display: flex;
+ flex-wrap: wrap;
+ align-items:center;
+}
+.site-footer__logo {
+ padding: 10px;
+ border-radius: 7px;
+ margin-right: auto;
+ background-color: #fff;
+}
+.site-footer__sub-text {
+ margin: 0;
+ margin-right: 17px;
+}
 /* MEDIA QUERIES */
 @media (max-width:1000px) {
  .site-header {
