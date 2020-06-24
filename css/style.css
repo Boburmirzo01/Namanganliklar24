@@ -277,12 +277,22 @@ img {
  font-size: 14px;
  line-height: 17px; 
 }
+.site-footer *:focus {
+ box-shadow: 0 0 0 4px rgba(255,255,255,0.4);
+}
 .site-footer__top {
  display: flex;
- flex-wrap: wrap;
  align-items:center;
 }
+.site-footer__divider {
+height: 3px;
+border:none;
+margin-top: 18px;
+margin-bottom: 12px;
+background: #133C82;
+}
 .site-footer__logo {
+ flex-shrink: 0;
  padding: 10px;
  border-radius: 7px;
  margin-right: auto;
@@ -291,8 +301,57 @@ img {
 .site-footer__sub-text {
  margin: 0;
  margin-right: 17px;
+ padding: 0 25px;
+}
+.site-footer__bottom {
+ display: flex;
+ flex-wrap: wrap;
+}
+.site-footer__about {
+ max-width: 365px;
+ margin-top: 0;
+ margin-right: 110px; 
+}
+.size-footer__heading {
+ font-size: 14px;
+ line-height: 17px;
+}
+.site-footer__telegram-sub {
+ flex-shrink: 0; 
+}
+.site-footer__nav {
+ display: flex;
+ flex-wrap: wrap;
+ max-width: 520px;
+ margin: 0;
+ padding: 0; 
+ list-style-type: none;
+}
+.site-footer__nav-item {
+ width: 50%;
+ /* padding-right: 15px; */
+ margin-bottom: 10px;
+}
+.site-footer__nav-link {
+ display: inline-block;
+ font-weight: 500;
+ color:#fff;
+ text-decoration: none;
+}
+.site-footer__nav-link:hover {
+ text-decoration: underline;
 }
 /* MEDIA QUERIES */
+@media (max-width:1080px) {
+ .site-footer__about,
+ .site-footer__nav {
+  max-width: 100%;
+  width: 50%;
+  margin-right: 0px;
+  padding-right: 5px;
+  
+ }
+}
 @media (max-width:1000px) {
  .site-header {
   padding-top: 20px;
@@ -324,6 +383,16 @@ img {
   .sitenav__item {
    margin-top: 3px;
    margin-bottom: 3px;
+  }
+  .site-footer__about,
+  .site-footer__nav {
+    width: 100px;
+  }
+  .site-footer__nav {
+   margin-bottom: 20px;
+  }
+  .site-footer__about {
+   order:1
   }
 } 
 @media (max-width:750px) {
@@ -359,7 +428,7 @@ img {
  }
  .exchange-rates,
  .search-button,
- .telegram-sub,
+ .site-header__telegram-sub,
  .language-toggler {
   display: none;
  }
@@ -408,6 +477,19 @@ img {
   .top-banner {
   display: none;
  }
+ /* site-footer */
+ .site-footer__top {
+  flex-wrap:wrap;
+ }
+ .site-footer__sub-text {
+  order: 1;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
+  padding: 0;
+  text-aling:right; 
+ }
+  
 }
 @media (max-width:500px) {
  .logo__img {
